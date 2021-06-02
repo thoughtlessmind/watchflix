@@ -6,6 +6,7 @@
     "sourceType": "module"
   },
   "rules": {
-    "@typescript-eslint/no-empty-function":"warn"
+    "@typescript-eslint/no-empty-function":"warn",
+    "scss(css-semicolonexpected)":"off"
   }
 }

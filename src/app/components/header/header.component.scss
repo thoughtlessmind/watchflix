@@ -1,0 +1,12 @@
+nav {
+  a {
+    @apply cursor-pointer;
+    cursor: pointer;
+    border-radius: var(--rounded);
+    padding: 0.3rem 0.6rem;
+    &:hover {
+      background-color: var(--color-text-accent);
+      color: var(--color-bg-primary);
+    }
+  }
+}

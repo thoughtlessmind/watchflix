@@ -1,4 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+:root {
+  @apply light;
+  --header-height: 60px;
+  --rounded: 4px;
+}
+
+.dark {
+  --color-bg-primary: #050505;
+  --color-bg-secondary: #1e1e1e;
+  --color-text-primary: #3fde82;
+  --color-text-secondary: #e2fdff;
+  --color-text-accent: #34ff8f;
+}
+
+.light {
+  --color-bg-primary: #3fde82;
+  --color-bg-secondary: #3fde82;
+  --color-text-primary: #050505;
+  --color-text-secondary: #1e1e1e;
+  --color-text-accent: #05386b;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 const a = 'asdfasd';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,3 +13,7 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+// "lint-staged": {
+//   "*.js": "eslint --cache --fix"
+// }

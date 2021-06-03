@@ -4,5 +4,16 @@
     <a>Top Movies</a>
     <a>Top Shows</a>
     <a>Discover</a>
+    <label class="switch">
+      <input
+      #themeToggle
+        type="checkbox"
+        name="theme"
+        id="themeToggle"
+        (change)="toggleTheme()"
+        [(ngModel)]="isThemeToggleChecked"
+      />
+      <span class="slider round"></span>
+    </label>
   </nav>
 </header>

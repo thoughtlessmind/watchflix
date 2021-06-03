@@ -1,20 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  @apply light;
-
   --header-height: 60px;
   --rounded: 4px;
-}
-
-.dark {
-  --color-bg-primary: #050505;
-  --color-bg-secondary: #1e1e1e;
-  --color-text-primary: #3fde82;
-  --color-text-secondary: #e2fdff;
-  --color-text-accent: #34ff8f;
-}
-
-.light {
+  --shadow: 1px 1px;
   --color-bg-primary: #3fde82;
   --color-bg-secondary: #3fde82;
   --color-text-primary: #050505;
@@ -22,6 +10,30 @@
   --color-text-accent: #05386b;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.6s ease, color 1s ease;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+html[data-theme='dark'] {
+  --color-bg-primary: #050505;
+  --color-bg-secondary: #1e1e1e;
+  --color-text-primary: #3fde82;
+  --color-text-secondary: #e2fdff;
+  --color-text-accent: #34ff8f;
+}
+
+html[data-theme='light'] {
+  --color-bg-primary: #3fde82;
+  --color-bg-secondary: #3fde82;
+  --color-text-primary: #050505;
+  --color-text-secondary: #1e1e1e;
+  --color-text-accent: #05386b;
+}
+
+[hidden] {
+  display: none;
+}

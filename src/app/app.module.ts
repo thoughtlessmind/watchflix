@@ -8,9 +8,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { ApiInterceptor } from './services/apiInterceptor';
+import { WelcomeSectionComponent } from './components/welcome-section/welcome-section.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, LandingPageComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    LandingPageComponent,
+    WelcomeSectionComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ApiInterceptor, multi: true },
@@ -18,7 +24,3 @@ import { ApiInterceptor } from './services/apiInterceptor';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-
-// "lint-staged": {
-//   "*.js": "eslint --cache --fix"
-// }

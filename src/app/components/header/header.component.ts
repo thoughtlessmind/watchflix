@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TrendingService } from 'src/app/services/trending.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   isThemeToggleChecked = false;
 
-  constructor() {}
+  constructor(private trendingService: TrendingService) {}
 
   changeThemeToDark = (): void => {
     document.documentElement.setAttribute('data-theme', 'dark');
@@ -37,7 +38,12 @@ export class HeaderComponent implements OnInit {
     this.isThemeToggleChecked = currentTheme === 'dark';
   }
 
+  getTrending(): void {
+    this.trendingService.getTrendings().subscribe((data) => console.log(data));
+  }
+
   ngOnInit(): void {
     this.setInitialTheme();
+    this.getTrending();
   }
 }

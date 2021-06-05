@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { ApiInterceptor } from './services/apiInterceptor';
 import { WelcomeSectionComponent } from './components/welcome-section/welcome-section.component';
+import { MediaCardComponent } from './components/media-card/media-card.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { WelcomeSectionComponent } from './components/welcome-section/welcome-se
     HeaderComponent,
     LandingPageComponent,
     WelcomeSectionComponent,
+    MediaCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [

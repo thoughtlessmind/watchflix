@@ -82,7 +82,7 @@
   .suggestion-list {
     list-style-type: none;
     padding: 6px 12px;
-    background-color: var(--main-bg-color);
+    background-color: var(--color-bg-primary);
     margin-top: -12px;
     padding-top: 20px;
     border-radius: var(--rounded);
@@ -96,16 +96,15 @@
       font-size: 1rem;
       cursor: pointer;
       border-radius: var(--rounded);
-      transition: color var(---short-transition-time),
-        background-color var(--short-transition-time);
       display: flex;
       align-items: center;
       justify-content: space-between;
       height: 72px;
+      transition: background-color 200ms, color 250ms ease;
 
       &:hover {
-        background-color: var(--primary-color);
-        color: var(--main-bg-color);
+        background-color: var(--color-text-accent);
+        color: var(--color-bg-primary);
         font-weight: 500;
       }
 

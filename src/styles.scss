@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: background-color 0.6s ease-in-out, color 0.65s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -48,4 +48,11 @@ input:focus {
   background-color: var(--color-bg-secondary);
   min-height: calc(100vh - var(--header-height));
   padding: 24px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-bottom: 12px;
+  color: var(--color-text-secondary);
 }

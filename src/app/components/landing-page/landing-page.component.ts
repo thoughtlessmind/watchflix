@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TrendingService } from 'src/app/services/trending.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -6,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.scss'],
 })
 export class LandingPageComponent implements OnInit {
-  constructor() {}
+  trendingData = undefined;
 
-  ngOnInit(): void {}
+  getTrendings(): void {
+    this.trendingService
+      .getTrendings(1)
+      .subscribe((data) => (this.trendingData = data.results));
+  }
+
+  constructor(private trendingService: TrendingService) {}
+
+  ngOnInit(): void {
+    this.getTrendings();
+  }
 }

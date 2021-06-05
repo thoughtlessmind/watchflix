@@ -1,9 +1,13 @@
 <div class="page-wrapper">
   <app-welcome-section></app-welcome-section>
-  <h2 class="section-title">
-    Trending
-  </h2>
+  <h2 class="section-title">Trending</h2>
   <section>
-    <app-media-card bannerUrl="/rgMfhcrVZjuy5b7Pn0KzCRCEnMX.jpg" name="test"></app-media-card>
+    <ng-container *ngIf="trendingData">
+      <app-media-card
+        *ngFor="let show of trendingData"
+        bannerUrl="{{ show.poster_path }}"
+        name="{{ show.name || show.title }}"
+      ></app-media-card>
+    </ng-container>
   </section>
 </div>

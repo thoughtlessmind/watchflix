@@ -8,7 +8,7 @@ import { catchError, retry } from 'rxjs/operators';
 })
 export class TrendingService {
   // trendingUrl = `/trending/all/day`;
-  getUrl(page: string | number = 1): string {
+  private getUrl(page: string | number = 1): string {
     return `/trending/all/day?page=${page}`;
   }
 

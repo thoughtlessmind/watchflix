@@ -11,8 +11,8 @@
   --color-text-secondary: #1e1e1e;
   --color-text-accent: #05386b;
   --shadow-medium: 6px 8px 25px 0 rgba(0, 0, 0, 0.22);
-  --backdrop-bg-gradiant-color-1: rgba(5, 5, 5, 0.598);
-  --backdrop-bg-gradiant-color-2: rgba(30, 30, 30, 0.509);
+  --backdrop-bg-gradiant-color-1: #050505af;
+  --backdrop-bg-gradiant-color-2: #1e1e1eac;
 }
 
 * {
@@ -31,8 +31,8 @@ html[data-theme='dark'] {
   --color-text-secondary: #e2fdff;
   --color-text-accent: #34ff8f;
   --shadow-medium: 6px 8px 25px 0px rgba(0, 0, 0, 0.22);
-  --backdrop-bg-gradiant-color-1: #05050585;
-  --backdrop-bg-gradiant-color-2: #1e1e1e89;
+  --backdrop-bg-gradiant-color-1: #050505d2;
+  --backdrop-bg-gradiant-color-2: #1e1e1ed2;
 }
 
 html[data-theme='light'] {

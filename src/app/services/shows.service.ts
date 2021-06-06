@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ShowsService {
   private getTrendingUrl(page: string | number = 1): string {
-    return `/trending/movie/day?page=${page}`;
+    return `/trending/tv/day?page=${page}`;
   }
 
   /**

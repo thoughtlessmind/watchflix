@@ -12,6 +12,7 @@ import { WelcomeSectionComponent } from './components/welcome-section/welcome-se
 import { MediaCardComponent } from './components/media-card/media-card.component';
 import { SwipeListComponent } from './components/swipe-list/swipe-list.component';
 import { MoviesPageComponent } from './components/movies-page/movies-page.component';
+import { ShowsPageComponent } from './components/shows-page/shows-page.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MoviesPageComponent } from './components/movies-page/movies-page.compon
     MediaCardComponent,
     SwipeListComponent,
     MoviesPageComponent,
+    ShowsPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/services/common.service';
 
 @Component({
   selector: 'app-media-card',
@@ -12,10 +13,10 @@ export class MediaCardComponent implements OnInit {
   @Input() id = '';
   @Input() releaseDate = '';
 
-  constructor() {}
+  constructor(private commonServices: CommonService) {}
 
-  getYear(releaseDate: string) {
-    return releaseDate ? new Date(releaseDate).getFullYear() : '';
+  getYear(releaseDate: string): string | number {
+    return this.commonServices.getYear(releaseDate);
   }
 
   ngOnInit(): void {}

@@ -3,11 +3,13 @@
   <h2 class="section-title">Trending</h2>
   <section>
     <ng-container *ngIf="trendingData">
-      <app-media-card
-        *ngFor="let show of trendingData"
-        bannerUrl="{{ show.poster_path }}"
-        name="{{ show.name || show.title }}"
-      ></app-media-card>
+      <app-swipe-list>
+        <app-media-card
+          *ngFor="let show of trendingData"
+          bannerUrl="{{ show.poster_path }}"
+          name="{{ show.name || show.title }}"
+        ></app-media-card>
+      </app-swipe-list>
     </ng-container>
   </section>
 </div>

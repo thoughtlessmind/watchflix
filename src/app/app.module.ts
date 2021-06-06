@@ -10,6 +10,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { ApiInterceptor } from './services/apiInterceptor';
 import { WelcomeSectionComponent } from './components/welcome-section/welcome-section.component';
 import { MediaCardComponent } from './components/media-card/media-card.component';
+import { SwipeListComponent } from './components/swipe-list/swipe-list.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MediaCardComponent } from './components/media-card/media-card.component
     LandingPageComponent,
     WelcomeSectionComponent,
     MediaCardComponent,
+    SwipeListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [

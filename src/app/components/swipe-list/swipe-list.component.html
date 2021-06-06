@@ -1,0 +1,23 @@
+<div class="container">
+  <button
+    class="scroll-button left hide"
+    id="leftScroll"
+    (click)="scrollRight('left')"
+  >
+    &#60;
+  </button>
+  <button
+    class="scroll-button right"
+    id="rightScroll"
+    (click)="scrollRight('right')"
+  >
+    &#62;
+  </button>
+  <div
+    (scroll)="manageScrollButtons()"
+    id="scrollContainer"
+    class="items-container"
+  >
+    <ng-content></ng-content>
+  </div>
+</div>

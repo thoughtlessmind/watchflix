@@ -8,7 +8,9 @@ header {
   background-color: var(--color-bg-primary);
   box-shadow: var(--shadow);
   z-index: 20;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
 
   h1 {
     font-size: 1.5rem;

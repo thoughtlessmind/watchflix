@@ -31,7 +31,7 @@ export class SwipeListComponent implements OnInit {
     }
   }
 
-  scrollRight(direction: string): void {
+  handleScrollBtnClick(direction: string): void {
     const el: HTMLElement | null = document.getElementById('scrollContainer');
     if (direction === 'left') {
       el?.scroll({

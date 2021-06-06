@@ -44,6 +44,14 @@ input:focus {
   outline: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 .page-wrapper {
   background-color: var(--color-bg-secondary);
   min-height: calc(100vh - var(--header-height));

@@ -11,6 +11,7 @@ import { ApiInterceptor } from './services/apiInterceptor';
 import { WelcomeSectionComponent } from './components/welcome-section/welcome-section.component';
 import { MediaCardComponent } from './components/media-card/media-card.component';
 import { SwipeListComponent } from './components/swipe-list/swipe-list.component';
+import { MoviesPageComponent } from './components/movies-page/movies-page.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SwipeListComponent } from './components/swipe-list/swipe-list.component
     WelcomeSectionComponent,
     MediaCardComponent,
     SwipeListComponent,
+    MoviesPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [

@@ -121,6 +121,10 @@
   color: var(--color-text-secondary);
 }
 
+.overview-text {
+  color: var(--color-bright);
+}
+
 .section-lable {
   font-weight: 500;
   opacity: 0.7;
@@ -169,13 +173,6 @@
 
 .casts-container {
   margin-top: 12px;
-}
-
-.casts-container h3 {
-  font-size: 1.4em;
-  color: #fff;
-  margin-bottom: 32px;
-  font-weight: normal;
 }
 
 .cast-cards-wrapper {

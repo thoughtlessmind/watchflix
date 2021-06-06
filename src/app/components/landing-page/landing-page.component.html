@@ -8,6 +8,9 @@
           *ngFor="let show of trendingData"
           bannerUrl="{{ show.poster_path }}"
           name="{{ show.name || show.title }}"
+          mediaType="{{show.media_type}}"
+          id="{{show.id}}"
+          releaseDate="{{show.release_date || show.first_air_date}}"
         ></app-media-card>
       </app-swipe-list>
     </ng-container>

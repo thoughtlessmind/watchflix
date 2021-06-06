@@ -1,0 +1,18 @@
+@import '../single-movie/single-movie.component.scss';
+
+.show-page-container {
+  height: 100vh;
+}
+
+.seasons-card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.seasons-card-wrapper .director-name > span {
+  font-weight: normal;
+  font-size: 12px;
+  margin-left: 4px;
+}

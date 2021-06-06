@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { MoviesPageComponent } from './components/movies-page/movies-page.component';
 import { ShowsPageComponent } from './components/shows-page/shows-page.component';
+import { SingleMovieComponent } from './components/single-movie/single-movie.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'top-shows',
     component: ShowsPageComponent,
+  },
+  {
+    path: 'movie/:id',
+    component: SingleMovieComponent,
   },
 ];
 

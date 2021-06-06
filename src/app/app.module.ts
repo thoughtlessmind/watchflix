@@ -13,6 +13,8 @@ import { MediaCardComponent } from './components/media-card/media-card.component
 import { SwipeListComponent } from './components/swipe-list/swipe-list.component';
 import { MoviesPageComponent } from './components/movies-page/movies-page.component';
 import { ShowsPageComponent } from './components/shows-page/shows-page.component';
+import { SingleMovieComponent } from './components/single-movie/single-movie.component';
+import { PersonCardComponent } from './components/person-card/person-card.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ShowsPageComponent } from './components/shows-page/shows-page.component
     SwipeListComponent,
     MoviesPageComponent,
     ShowsPageComponent,
+    SingleMovieComponent,
+    PersonCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [

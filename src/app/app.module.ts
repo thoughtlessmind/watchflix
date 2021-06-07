@@ -16,6 +16,7 @@ import { ShowsPageComponent } from './components/shows-page/shows-page.component
 import { SingleMovieComponent } from './components/single-movie/single-movie.component';
 import { PersonCardComponent } from './components/person-card/person-card.component';
 import { SingleShowComponent } from './components/single-show/single-show.component';
+import { PersonPageComponent } from './components/person-page/person-page.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SingleShowComponent } from './components/single-show/single-show.compon
     SingleMovieComponent,
     PersonCardComponent,
     SingleShowComponent,
+    PersonPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [

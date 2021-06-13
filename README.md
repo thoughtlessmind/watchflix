@@ -3,7 +3,8 @@
   
 https://notwatchflix.netlify.app
 
-An Angular app to show movie details. User can view a single movie/show details, casts info, search movies/shows/actors.
+An Angular app to show movie details. User can view a single movie/show details, casts info, search movies/shows/actors.  
+This is clone of my [other project](https://github.com/thoughtlessmind/watch-time), made to practice Angular and RxJS.
 
   
 
